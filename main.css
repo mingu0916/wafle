@@ -1,0 +1,692 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 100;
+    src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Thin.otf) format('opentype');
+}
+
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 300;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Light.otf) format('opentype');}
+
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 400;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf) format('opentype');}
+
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 500;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Medium.otf) format('opentype');}
+
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 700;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Bold.otf) format('opentype');}
+
+@font-face {font-family: 'Noto Sans KR';font-style: normal;font-weight: 900;src: url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff2) format('woff2'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.woff) format('woff'),url(//fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Black.otf) format('opentype');}
+
+body, h1, h2, h3, h4, h5, h6, input, textarea, select {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.first {
+    width: 1440px;
+    height: 36px;
+    font-size: 16px;
+    display: flex;
+    gap: 32px;
+    justify-content: flex-end;
+    margin: 0 auto;
+}
+
+.first a {
+    color: #777;
+    line-height: 50px;
+}
+
+/* --- */
+
+.header {
+    width: 1440px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+
+.header .inner {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header .inner h1 img {
+    width: 122px;
+    height: 82px;
+    object-fit: cover;
+}
+
+.header .inner .nav {
+    margin: 0 auto;
+}
+
+.header .inner .nav .gnb {
+    display: flex;
+    line-height: 80px;
+    font-size: 18px;
+}
+
+.header .inner .nav .gnb > li {
+    position: relative;
+}
+
+.header .inner .nav .gnb > li .menu_title {
+    line-height: 100px;
+    padding: 0 20px;
+}
+
+.header .inner .nav .gnb > li:hover .menu_title {
+    color: #570ce1;
+    transition: 0.5s;
+}
+
+.header .inner .nav .gnb > li .menu_title_depth {
+    width: 100%;
+    padding: 50px 0;
+    background-color: #ffffff;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    text-align: center;
+    opacity: 0;
+    transition: 0.5s;
+    line-height: 2;
+    display: none;
+}
+
+.header .inner .nav .gnb > li:hover .menu_title_depth {
+    display: block;
+}
+
+.header .inner .nav .gnb:hover > li .menu_title_depth {
+    opacity: 1;
+    transition: 0.7s;
+    visibility: visible;
+}
+
+.header .inner .nav .gnb a {
+    color: black;
+}
+
+.header .inner .purple_menu {
+    display: flex;
+    gap: 30px;
+    text-align: center;
+    align-items: center;
+}
+
+.header .inner .purple_menu .purple_menu_group .symbol img {
+    height: 38px;
+}
+
+.header .inner .purple_menu .purple_menu_group .purple_text p {
+    font-size: 13px;
+    color: #570ce1;
+}
+
+/* ----- */
+
+.banner .banner_image {
+    width: 1920px;
+    height: 712px;
+}
+
+.banner .banner_image img {
+    height: 712px;
+    display: block;
+}
+
+@media screen and (max-width: 500px) {
+    .pc {display: none;}
+
+    .banner {width: 100%;}
+
+    .header .inner {
+        margin: 0px auto;
+    }
+
+    .header .inner .nav {
+        background-color: rgb(255, 158, 158);
+        position: fixed;
+        top: 100px;
+        right: 100px;
+        width: 100%;
+        height: 100%;
+        padding: 50px;
+        transition: 0.7s;
+    }
+
+    .header .inner .nav .gnb {
+        width: 100%;
+    }
+
+    .header .inner .nav .gnb li {
+        font-size: 8px;
+    }
+
+    .header .inner .nav .gnb > li .menu_title_depth {
+        font-size: 10px;
+        font-weight: bold;
+        padding: 10px;
+        display: block;
+    }
+
+    .banner .banner_image { /* 나머지 영역값이 안잡힘 */
+        height: 500px;
+    }
+
+    .banner .banner_image img {
+        height: 100%;
+        display: block;
+        object-fit: cover;
+    }
+
+    .time {
+        padding: 14px;
+    }
+ 
+    .time .time_text {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .time .time_text .time_text_s { /* width 값이 적용되지않음 */
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .time .time_text .time_text_s h1 {
+        font-size: 10px;
+        margin: 0 auto;
+    }
+
+    .chapter1 {
+        width: 500px;
+    }
+
+    .chapter1 .chapter1_title {
+        font-size: 20px;
+    }
+
+ }
+
+.time {
+    padding: 24px;
+    border: 2px solid #d8d8d8;
+}
+
+.time .time_text {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.time .time_text .time_text_s {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.time .time_text .time_text_s h1 {
+    font-size: 22px;
+    margin: 0 auto;
+}
+
+.chapter1 {
+    width: 1440px;
+    margin: 0 auto;
+    padding-top: 130px;
+}
+
+.chapter1 .chapter1_title h1 {
+    font-size: 40px;
+}
+
+.chapter1 .image1 {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    padding-top: 50px;
+}
+
+.chapter1 .image1 .video img {
+    width: 464px;
+    height: 584px;
+    object-fit: cover;
+    border-radius: 40px;
+}
+
+.chapter1_etc {
+    max-width: 1920px;
+    width: 1440px;
+    margin: 0 auto;
+    padding-top: 130px;
+}
+
+.chapter1_etc .intro {
+    display: flex;
+    justify-content: space-between;
+}
+
+.chapter1_etc .intro .intro_s .intro_text1 h1:hover {
+    color: #570ce1;
+    transition: 0.5s;
+}
+
+.chapter1_etc .intro .intro_s .pic img {
+    width: 344px;
+    height: 344px;
+    object-fit: cover;
+    border-radius: 170px 170px 0 0;
+}
+
+.chapter1_etc .intro .intro_s .intro_text1 {
+    width: 344px;
+    padding-top: 20px;
+    background-color: rgb(255, 255, 255, 0.7);
+    /* [아직 안한거] - 흰색배경 크기 조절해서 어색하지 않도록 배치시켜줘야함 */
+}
+
+.chapter1_etc .intro .intro_s .intro_text1 h1 {
+    font-size: 18px;
+    font-weight: bold;
+    /* [아직 안한거] - 제목텍스트 가운데로 배치 */
+}
+
+.chapter1_etc .intro .intro_s .intro_text1 p {
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 30px;
+    line-height: 1.5;
+    /* [아직 안한거] - 간략설명에 대한 글자영역크기의 여백을 좀 더 크게 설정하여서
+    흰색배경과 p태그 설명의 크기가 딱 맞지않고 여백이 예쁘게 보이도록
+    다시 수정하여 설정해줘야함 */
+}
+
+.chapter2 {
+    width: 1440px;
+    margin: 0 auto;
+    padding-top: 130px;
+}
+
+.chapter2 .chapter2_title h1 {
+    font-size: 40px;
+}
+
+.chapter2 .image2 {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chapter2 .image2 .image2_group img {
+    width: 272px;
+    height: 344px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.chapter2 .image2 .text2 {
+    width: 272px;
+    padding-top: 16px;
+    text-align: center;
+}
+
+.chapter2 .image2 .text2:hover {
+    color: #570ce1;
+    transition: 0.5s;
+}
+
+.chapter2 .image2 .text2 h2 {
+    font-size: 18px;
+}
+
+/* chapter3 start */
+
+    .chapter3 {
+        width: 1440px;
+        margin: 0 auto;
+        padding-top: 130px;
+    }
+
+    .chapter3 .image-01 img {
+        width: 1440px;
+        height: 324px;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+
+    .chapter3 .image_groups {
+        padding-top: 18px;
+        display: flex;
+        gap: 18px;
+    }
+
+    .chapter3 .image_groups .image-02 img {
+        width: 712px;
+        height: 712px;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+
+    .chapter3 .image_groups .image_sogroups1 img {
+        width: 346px;
+        height: 346px;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+
+    .chapter3 .image_groups .image_sogroups2 img {
+        width: 346px;
+        height: 346px;
+        object-fit: cover;
+        border-radius: 30px;
+        margin-bottom: 18px;
+    }
+
+    .chapter3 .image_groups .image_sogroups1 .image-03 img {
+        margin-bottom: 18px;
+    }
+
+    .chapter3 .image_groups .image_sogroups2 .image-05 img {
+        margin-bottom: 18px;
+    }
+
+    .chapter3 .image_last {
+        display: flex;
+        gap: 18px;
+        padding-bottom: 130px;
+    }
+
+    .chapter3 .image_last .image-07 img {
+        width: 346px;
+        height: 346px;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+
+    .chapter3 .image_last .image-08 img {
+        width: 712px;
+        height: 346px;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+
+    .chapter3 .image_last .image-09 img {
+        width: 346px;
+        height: 346px;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+
+/* chapter3 end */
+
+.chapter4 .chapter4-1 .chapter4_title h1 {
+    font-size: 40px;
+}
+
+.chapter4 .chapter4-1 .chapter4_title .title_p .p {
+    font-size: 18px;
+    margin-top: 15px;
+    display: flex;
+    gap: 20px;
+}
+
+.chapter4 .chapter4-2 .chapter4_title2 .title_p2 .p2 {
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+.chapter4 .chapter4-1 img {
+    width: 666px;
+    height: 722px;
+    object-fit: cover;
+    margin-top: 50px;
+    border-radius: 30px;
+}
+
+.chapter4 .chapter4-2 .chapter4_title2 h1 {
+    font-size: 40px;
+}
+
+.chapter4 .chapter4-2 .chapter4_image {
+    width: 610px;
+    object-fit: cover;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    overflow: hidden;
+}
+
+.chapter4 .chapter4-2 .chapter4_image .chapter4_image1 img {
+    height: 722px;
+    object-fit: cover;
+    border-radius: 30px;
+    display: block;
+    margin-top: 50px;
+}
+
+.chapter4 .chapter4-2 .chapter4_image .chapter4_image2 img {
+    height: 722px;
+    object-fit: cover;
+    border-radius: 30px;
+    display: block;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.chapter5 {
+    width: 1440px;
+    margin: 0 auto;
+    padding-top: 130px;
+}
+
+.chapter5 .chapter5_title h1 {
+    font-size: 40px;
+}
+
+.chapter5 .chapter5_group {
+    padding-top: 50px;
+}
+
+.chapter5 .chapter5_group .chapter5_1 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+}
+
+.chapter5 .chapter5_group .chapter5_2 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 24px;
+}
+
+.chapter5 .chapter5_group .chapter5-1 {
+    width: 462px;
+    height: 106px;
+    border: 1px solid #777777;
+    font-size: 13px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    line-height: 2;
+}
+
+.chapter5 .chapter5_group .chapter5-1 h1 {
+    font-size: 18px;
+}
+
+.chapter5 .chapter5_group .chapter5-1:hover {
+    color: #570ce1;
+    transition: 0.5s;
+}
+
+.chapter5 .chapter5_group .chapter5-2:hover {
+    color: #570ce1;
+    transition: 0.5s;
+}
+
+
+.chapter5 .chapter5_group .chapter5-1 p {
+    font-size: 13px;
+}
+
+.chapter5 .chapter5_group .chapter5-2 {
+    width: 462px;
+    height: 106px;
+    border: 1px solid #777777;
+    font-size: 13px;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    line-height: 2;
+}
+
+.chapter5 .chapter5_group .chapter5-2 h1 {
+    font-size: 18px;
+}
+
+.chapter5 .chapter5_group .chapter5-2 p {
+    font-size: 13px;
+}
+
+.chapter6 {
+    margin: 0 auto;
+    padding-top: 130px;
+}
+
+.chapter6 .chapter6_title {
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.chapter6 .chapter6_title h1 {
+    font-size: 40px;
+}
+
+.chapter6 .chapter6_title p {
+    font-size: 18px;
+    padding-top: 24px;
+}
+
+.chapter6 .chapter6_image_group {
+    width: 1920px;
+    display: flex;
+    padding-top: 50px;
+    overflow: hidden;
+}
+
+.chapter6 .chapter6_image_group .chapter6_image img {
+    width: 344px;
+    height: 344px;
+    object-fit: cover;
+}
+
+.chapter7 {
+    width: 1440px;
+    margin: 0 auto;
+    padding-top: 130px;
+}
+
+.chapter7 .chapter7_title {
+    display: flex;
+    gap: 30px;
+
+}
+
+.chapter7 .chapter7_title li {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.chapter7 .chapter7_group {
+    padding-top: 50px;
+}
+
+.chapter7 .chapter7_group .chapter7_group-1 {
+    display: flex;
+}
+
+.chapter7 .chapter7_group .chapter7_group-1 .chapter7_image img {
+    width: 240px;
+    height: 240px;
+}
+
+.chapter7 .chapter7_group .chapter7_group-2 {
+    display: flex;
+    margin-bottom: 130px;
+}
+
+.chapter7 .chapter7_group .chapter7_group-2 .chapter7_image2 img {
+    width: 240px;
+    height: 240px;
+}
+
+.footer .inner .nav .gnb {
+    display: flex;
+    gap: 30px;
+}
+
+.footer .inner .nav .gnb .menu2 {
+    color: #000000;
+}
+
+.main {
+    display: flex;
+    gap: 40px;
+}
+
+.main img {
+    padding-top: 50px;
+    object-fit: cover;
+}
+
+.main .footer_text_group {
+    padding-top: 40px;
+}
+
+.main .footer_text1 {
+    display: flex;
+    gap: 40px;
+    line-height: 2;
+}
+
+.main2 {
+    padding-top: 40px;
+    display: flex;
+    gap: 60px;
+    margin-bottom: 70px;
+}
+
+.main2 .main2_group-1 {
+    display: flex;
+    gap: 20px;
+}
+
+.main2 .main2_group-2 {
+    display: flex;
+    gap: 20px;
+}
+
+.main2 .main2_group-2 .main2_text {
+    width: 200px;
+    line-height: 2.8;
+}
