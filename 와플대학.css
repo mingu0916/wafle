@@ -1,0 +1,617 @@
+@charset "utf=8";
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    color: #333;
+    font-family: 'Pretendard-Regular';
+}
+
+.header {
+    max-width: 1920px;
+    width: calc(100% - 320px);
+    height: 40px;
+    margin: 0 auto;
+    line-height: 40px;
+}
+
+.header .header_text {
+    display: flex;
+    gap: 60px;
+    justify-content: flex-end;
+}
+
+.header .header_text .text-1 {
+    color: #2A56B6;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.header-1 {
+    height: 100px;
+    background-color: #2A56B6;
+}
+
+.header-1 .nav {
+    max-width: 1920px;
+    width: calc(100% - 320px);
+    margin: 0 auto;
+    line-height: 126px;
+    display: flex;
+    gap: 20px;
+}
+
+.header-1 .nav .gnb {
+    max-width: 1920px;
+    width: calc(100% - 320px);
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    line-height: 100px;
+}
+
+.header-1 .nav .gnb li {
+    color: #fff;
+    font-size: 18px;
+}
+
+.header-1 .nav .logo {
+    width: 200px;
+    height: 40px;
+}
+
+.header-1 .nav .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-1 .nav .sns {
+    line-height: 110px;
+}
+
+.header-1 .nav .sns .icon {
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
+.banner {
+    height: 740px;
+    background-color: #FFDE00;
+    position: relative;
+    margin-bottom: 140px;
+}
+
+.banner .image {
+    max-width: 1920px;
+    width: calc(100% - 320px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.banner .image img {
+    width: 100%;
+    height: 740px;
+    object-fit: cover;
+}
+
+.banner .img_icon1 {
+    position: absolute;
+    top: 84%;
+    right: 15%;
+}
+
+.banner .img_icon1 .icon-1 {
+    width: 180px;
+    height: 80px;
+    display: flex;
+    gap: 16px;
+}
+
+.banner .img_icon1 .icon-1 li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner .img_icon2 {
+    position: absolute;
+    top: 92%;
+    right: 43%;
+}
+
+/* 배너 끝 */
+
+.section-01 .text {
+    max-width: 1920px;
+    width: calc(100% - 320px);
+    margin: 0 auto;
+    padding: 80px 0;
+}
+
+.section-01 .text h1 {
+    font-size: 18px;
+    color: #FFDE00;
+}
+
+.section-01 .text h2 {
+    font-size: 60px;
+    color: #2A56B6;
+}
+
+.section-01 .image-01 {
+    max-width: 1920px;
+    width: calc(100% - 320px);
+    margin: 0 auto;
+    position: absolute;
+    top: 0px;
+    left: 220px;
+}
+
+.section-01 .image-02 {
+    position: relative;
+    z-index: 2;
+
+    padding: 360px 160px;
+}
+
+.section-01 .image-03 {
+    position: absolute;
+    top: 70%;
+    left: 150px;
+}
+
+.section-01 .image-04 {
+    position: absolute;
+    top: 25%;
+    left: 58%;
+}
+
+.section-01 .image-05 {
+    position: absolute;
+    top: 10%;
+    left: 57%;
+}
+
+.section-01 .section-01-01 {
+    position: absolute;
+    top: 20%;
+    right: 8%;
+}
+
+.section-01 .section-01-1 {
+    display: flex;
+    gap: 10px;
+}
+
+.section-01 .section-01-1 img {
+    padding: 20px 0;
+}
+
+.section-01 .section-01-01 h1 {
+    font-size: 20px;
+    line-height: 100px;
+}
+
+.section-01 .section-01-01 h2 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 100px;
+}
+
+/* 섹션-01 끝 */
+
+
+
+/* 섹션-02 시작 */
+
+    .section-02 .section-02-1 {
+        max-width: 1920px;
+        width: calc(100% - 320px);
+    }
+
+    .section-02 .section-02-1 h1 {
+        color: #093390;
+        font-size: 45px;
+        padding-top: 160px;
+    }
+
+    .section-02 .section-02-2 h2 {
+        color: #093390;
+        font-size: 32px;
+        padding-top: 50px;
+    }
+
+    .section-02 .section-02-2 h3 {
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 40px;
+        padding-top: 12px;
+    }
+
+    .section-02 .section-02-3 {
+        padding-bottom: 110px;
+    }
+
+    .section-02 .section-02-3 h4 {
+        font-weight: 400;
+        font-size: 18px;
+        padding-top: 50px;
+        line-height: 26px;
+    }
+
+    .section-02 .section-02-3 h5 {
+        font-weight: 400;
+        font-size: 18px;
+        padding-top: 20px;
+        line-height: 26px;
+    }
+
+    .section-02 .section-02-3 h6 {
+        font-weight: 400;
+        font-size: 18px;
+        padding-top: 20px;
+        line-height: 26px;
+    }
+
+    .section-02 .section-02-bu {
+        width: 200px;
+        padding: 24px 10px;
+        border-radius: 10px;
+        text-align: center;
+        background-color: #2A56B6;
+    }
+
+    .section-02 .section-02-bu p {
+        font-weight: bold;
+        font-size: 20px;
+        color: #fff;
+    }
+
+/* 섹션-02 끝 */
+
+
+
+
+
+
+
+
+/* 섹션-03 시작 */
+    .section-03 {
+        max-width: 1920px;
+        width: calc(100% - 320px);
+        margin: 0 auto;
+    }
+
+    .section-03 .section-03-g {
+        position: relative;
+
+    }
+
+    .section-03 .section-03-g .section-03-i img {
+        height: 700px;
+    }
+
+    .section-03 .section-03-g .section-03-1 {
+        position: absolute;
+        top: 64px;
+        left: 136px;
+        text-align: center;
+    }
+
+    .section-03 .section-03-g .section-03-1 h1 {
+        font-size: 22px;
+        color: #fff;
+    }
+
+    .section-03 .section-03-g .section-03-1 h2 {
+        font-size: 28px;
+        color: #fff;
+        padding: 10px 0;
+    }
+
+    .section-03 .section-03-g .section-03-1 .section-03-i-2 {
+        padding-top: 30px;
+    }
+
+    .section-03 .section-03-g .section-03-1 .section-03-i-2 img {
+        width: 400px;
+    }
+
+    .section-03 .section-03-g .section-03-1 .section-03-2 p {
+        padding: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .section-03 .section-03-bu {
+        margin: 100px auto;
+        width: 200px;
+        padding: 24px 10px;
+        border-radius: 10px;
+        text-align: center;
+        border: 2px solid #2A56B6;
+    }
+    .section-03 .section-03-bu p {
+        font-weight: bold;
+        font-size: 20px;
+        color: #2A56B6;
+    }
+
+/* 섹션-03 끝 */
+
+
+
+
+
+
+/* 섹션-04 끝 */
+
+.section-04 {
+    max-width: 1920px;
+    width: calc(100% - 320px);
+    margin: 0 auto;
+    padding: 180px 0;
+    position: relative;
+}
+
+.section-04 h1 {
+    text-align: center;
+    font-size: 40px;
+    padding: 30px;
+}
+
+.section-04 .text {
+    max-width: 1920px;
+    width: calc(100% - 320px);
+    margin: 0 auto;
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+}
+
+.section-04 .text .text-0 {
+    background-color: #2A56B6;
+    margin-bottom: 70px;
+    padding: 20px 50px;
+    border-radius: 50px;
+}
+
+.section-04 .text .text-0 h2 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.section-04 .images {
+    max-width: 1920px;
+    width: calc(100% - 320px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.section-04 .images .images-0 {
+    position: relative;
+}
+
+.section-04 .images .images-0 img {
+    height: 300px;
+    border-radius: 30px 30px 0 0;
+}
+
+.section-04 .images .images-0 .text-1 {
+    border-radius: 0 0 30px 30px;
+    padding: 30px 40px;
+    box-shadow: 4px 4px 4px #c9c9c9;
+}
+
+.section-04 .images .images-0 .text-1 h4 {
+    font-size: 20px;
+}
+
+.section-04 .images .images-0 .text-1 p {
+    padding-top: 40px;
+    font-size: 20px;
+}
+
+.section-04 .icons-1 img {
+    width: 70px;
+    height: 70px;
+}
+
+.section-04 .icons-1 {
+    position: absolute;
+    top: 60%;
+    right: 102%;
+}
+
+.section-04 .icons-2 img {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 60%;
+    left: 102%;
+}
+
+/* ------------ 섹션-04 끝 */
+
+
+
+
+.section-05 .section-05-1 {
+    max-width: 1920px;
+    width: calc(100% - 320px);
+}
+
+.section-05 .section-05-1 .text {
+    padding: 40px 80px;
+    line-height: 60px;
+    color: #2A56B6;
+}
+
+.section-05 .section-05-1 h1 {
+    font-size: 48px;
+}
+
+.section-05 .section-05-1 p {
+    font-size: 32px;
+}
+
+
+
+
+.section-05 .section-05-2 {
+    max-width: 1920px;
+    width: calc(100% - 320px);
+    margin: 0 auto;
+}
+
+.section-05 .section-05-2 .text {
+    max-width: 1920px;
+    width: calc(100% - 320px);
+    margin: 0 auto;
+    text-align: center;
+    line-height: 60px;
+    padding: 30px 0;
+}
+
+.section-05 .section-05-2 h1 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.section-05 .section-05-2 p {
+    color: #fff;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+
+
+.section-05 .section-05-2 .search {
+    max-width: 1920px;
+    width: calc(100% - 320px);
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.section-05 .section-05-2 .search .search-icon {
+    position: absolute;
+    top: 25px;
+    left: 100px;
+}
+
+.section-05 .section-05-2 img {
+    width: 40px;
+    height: 40px;
+}
+
+.section-05 .section-05-2 .search h3 {
+    color: #777;
+    font-weight: 400;
+    font-size: 28px;
+    background-color: #fff;
+    line-height: 50px;
+    border-radius: 50px;
+    padding: 20px 200px;
+}
+
+.section-05 .section-05-2 .text-2 h5 {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    padding-top: 70px;
+    line-height: 30px;
+}
+
+
+/* ---------------푸터 끝 */
+
+.footer {
+    margin-top: 180px;
+    height: 396px;
+    background-color: #2A56B6;
+}
+
+.footer .nav {
+    max-width: 1920px;
+    width: calc(100% - 320px);
+    margin: 0 auto;
+}
+
+.footer .nav .gnb {
+    color: #fff;
+    display: flex;
+    gap: 80px;
+    padding: 50px 0;
+}
+
+.footer .nav-2 .gnb-2 {
+    max-width: 1920px;
+    width: calc(100% - 320px);
+    margin: 0 auto;
+    padding: 20px 0;
+    color: #fff;
+    display: flex;
+    gap: 30px;
+    line-height: 10px;
+}
+
+.footer .footer-02 {
+    max-width: 1920px;
+    width: calc(100% - 320px);
+    margin: 0 auto;
+}
+
+.footer .footer-02 .footer-2 .logo-f {
+    padding: 10px 0;
+}
+
+.footer .footer-02 .footer-2 .logo-f img {
+    width: 200px;
+    height: 100px;
+}
+
+.footer .footer-02 .footer-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .footer-02 .footer-2 .sns-f {
+    display: flex;
+    gap: 20px;
+    line-height: 100px;
+}

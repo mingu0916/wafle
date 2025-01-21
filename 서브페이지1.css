@@ -1,0 +1,373 @@
+@charset "utf=8";
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    color: #333;
+    font-family: 'Pretendard-Regular';
+}
+
+.header {
+    max-width: 1920px;
+    width: calc(100% - 320px);
+    height: 40px;
+    margin: 0 auto;
+    line-height: 40px;
+}
+
+.header .header_text {
+    display: flex;
+    gap: 60px;
+    justify-content: flex-end;
+}
+
+.header .header_text .text-1 {
+    color: #2A56B6;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.header-1 {
+    height: 100px;
+    background-color: #2A56B6;
+}
+
+.header-1 .nav {
+    max-width: 1920px;
+    width: calc(100% - 320px);
+    margin: 0 auto;
+    line-height: 126px;
+    display: flex;
+    gap: 20px;
+}
+
+.header-1 .nav .gnb {
+    max-width: 1920px;
+    width: calc(100% - 320px);
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    line-height: 100px;
+}
+
+.header-1 .nav .gnb li {
+    color: #fff;
+    font-size: 18px;
+}
+
+.header-1 .nav .logo {
+    width: 200px;
+    height: 40px;
+}
+
+.header-1 .nav .logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-1 .nav .sns {
+    line-height: 110px;
+}
+
+.header-1 .nav .sns .icon {
+    display: flex;
+    justify-content: flex-end;
+    gap: 40px;
+}
+
+.section-01 {
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.section-01 .banner-i img {
+    width: 1903px;
+}
+
+.section-01 .text-1 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    color: #fff;
+    text-align: center;
+}
+
+.section-01 .text-1 h1 {
+    font-size: 48px;
+}
+
+.section-01 .text-1 p {
+    padding-top: 20px;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.section-01 .text-2 {
+    position: absolute;
+    top: 64%;
+    left: 35%;
+    color: #fff;
+    display: flex;
+    gap: 50px;
+
+    line-height:  40px;
+    font-size: 20px;
+    padding-top: 20px;
+}
+
+.section-01 .text-2 .text-2-1 h3 {
+    background-color: #2A56B6;
+    font-size: 20px;
+    padding: 20px 40px;
+    border-radius: 40px;
+}
+
+.section-01 .text-2 .text-2-2 h2 {
+    background-color: #fff;
+    font-size: 20px;
+    padding: 20px 40px;
+    border-radius: 40px;
+    color: #333;
+    font-weight: 400;
+}
+
+.section-02 .text-3 {
+    max-width: 1920px;
+    width: calc(100% - 320px);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-02 .text-3 h1 {
+    color: #2A56B6;
+    font-size: 30px;
+    padding-top: 80px;
+}
+
+.section-02 .text-3 h2 {
+    color: #2A56B6;
+    font-size: 30px;
+    padding-top: 30px;
+    line-height: 40px;
+}
+
+.section-02 .text-3 p {
+    font-weight: 400;
+    font-size: 18px;
+    padding-top: 40px;
+    line-height: 30px;
+}
+
+.section-03 .section-03-1 {
+    padding: 200px 0;
+    text-align: left;
+}
+
+.section-03 .section-03-1 h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #093390;
+}
+
+.section-03 .section-03-1 .section-03-1-p {
+    padding-top: 40px;
+}
+
+.section-03 .section-03-1 p {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 6px;
+}
+
+.section-03 .section-03-2 {
+    padding: 1px 0;
+    text-align: right;
+}
+
+.section-03 .section-03-2 h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #093390;
+}
+
+.section-03 .section-03-2 .section-03-2-p {
+    padding-top: 40px;
+}
+
+.section-03 .section-03-2 p {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 6px;
+}
+
+.section-03 .section-03-3 {
+    padding: 140px 0;
+    text-align: right;
+    color: #fff;
+}
+
+.section-03 .section-03-3 h1 {
+    font-size: 30px;
+    font-weight: 500;
+    padding: 0 180px;
+}
+
+.section-03 .section-03-3 .section-03-3-p {
+    padding-top: 40px;
+    padding: 100px 70px;
+    text-align: left;
+}
+
+.section-03 .section-03-3 p {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 6px;
+}
+
+.section-03 .section-03-4 {
+    padding: 100px 0;
+    text-align: left;
+}
+
+.section-03 .section-03-4 h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #093390;
+}
+
+.section-03 .section-03-4 .section-03-4-p {
+    padding-top: 40px;
+}
+
+.section-03 .section-03-4 p {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 6px;
+}
+
+.section-03 .section-03-5 {
+    padding: 80px 0;
+    text-align: right;
+}
+
+.section-03 .section-03-5 h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #093390;
+}
+
+.section-03 .section-03-5 .section-03-5-p {
+    padding-top: 40px;
+}
+
+.section-03 .section-03-5 p {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 6px;
+}
+
+.section-04 {
+    background-color: #F5F5F5;
+    margin-top: 180px;
+}
+
+.section-04 .section-04-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-04 .section-04-1 img {
+    width: 951px;
+    height: 420px;
+}
+
+.section-04 .section-04-1 .text-04-1 {
+    padding: 130px 120px;
+}
+
+.section-04 .section-04-1 .text-04-1 h1 {
+    font-size: 32px;
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+
+.section-04 .section-04-1 .text-04-1 p {
+    width: 620px;
+    font-size: 18px;
+}
+
+.footer {
+    margin-top: 180px;
+    height: 396px;
+    background-color: #2A56B6;
+}
+
+.footer .nav {
+    max-width: 1920px;
+    width: calc(100% - 320px);
+    margin: 0 auto;
+}
+
+.footer .nav .gnb {
+    color: #fff;
+    display: flex;
+    gap: 80px;
+    padding: 50px 0;
+}
+
+.footer .nav-2 .gnb-2 {
+    max-width: 1920px;
+    width: calc(100% - 320px);
+    margin: 0 auto;
+    padding: 20px 0;
+    color: #fff;
+    display: flex;
+    gap: 30px;
+    line-height: 10px;
+}
+
+.footer .footer-02 {
+    max-width: 1920px;
+    width: calc(100% - 320px);
+    margin: 0 auto;
+}
+
+.footer .footer-02 .footer-2 .logo-f {
+    padding: 10px 0;
+}
+
+.footer .footer-02 .footer-2 .logo-f img {
+    width: 200px;
+    height: 100px;
+}
+
+.footer .footer-02 .footer-2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .footer-02 .footer-2 .sns-f {
+    display: flex;
+    gap: 20px;
+    line-height: 100px;
+}
